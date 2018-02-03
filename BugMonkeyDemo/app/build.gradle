@@ -30,6 +30,8 @@ android {
 
         vectorDrawables.useSupportLibrary = true
         javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
+        useLibrary 'org.apache.http.legacy'
     }
     buildTypes {
         release {
@@ -59,6 +61,14 @@ dependencies {
     implementation('com.tencent.tinker:tinker-android-lib:latest.release')
     implementation "com.android.support:multidex:1.0.1"
 
+    //retrofit 和 rxjava  依赖
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.7.0'
+    implementation 'com.squareup.okio:okio:1.12.0'
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'io.reactivex:rxjava:1.1.0'
+
 }
 
 
@@ -66,7 +76,7 @@ dependencies {
 def gitSha() {
     try {
 //        String gitRev = 'git rev-parse --short HEAD'.execute(null, project.rootDir).text.trim()
-        String gitRev = "fushuang666"
+        String gitRev = "123456"
         if (gitRev == null) {
             throw new GradleException("can't get git rev, you should add git to system path or just input test value, such as 'testTinkerId'")
         }
@@ -91,7 +101,7 @@ ext {
 
     //for normal build
     //old apk file to build patch apk
-    tinkerOldApkPath = "${bakPath}/app-debug-0808-17-04-26.apk"
+    tinkerOldApkPath = "${bakPath}/app-debug-0203-14-32-27.apk"
     //proguard mapping file to build patch apk
     tinkerApplyMappingPath = "${bakPath}/app-debug-1018-17-32-47-mapping.txt"
     //resource R.txt to build patch apk, must input if there is resource changed

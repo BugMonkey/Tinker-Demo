@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 
+import com.tencent.tinker.lib.tinker.TinkerInstaller;
 import com.tencent.tinker.loader.app.DefaultApplicationLike;
 
 /**
@@ -36,7 +37,7 @@ public class MyApplicationLike extends DefaultApplicationLike {
         //MultiDex.install(base);
 
         // 安装tinker
-         TinkerManager.installTinker(this);
+         TinkerInstaller.install(this);
        // Beta.installTinker(this);
     }
 

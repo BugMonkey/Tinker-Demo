@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_activity_main).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"16：30",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"16：",Toast.LENGTH_SHORT).show();
                 TinkerInstaller.onReceiveUpgradePatch(getApplicationContext(), Environment.getExternalStorageDirectory().getAbsolutePath() + "/patch_signed_7zip.apk");
 
 
