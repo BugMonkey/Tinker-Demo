@@ -9,14 +9,13 @@ import com.tencent.tinker.loader.shareutil.ShareConstants;
 
 public class MyApplication extends TinkerApplication {
 
-
-    public  MyApplication() {
+    /**
+     * current build.
+     *
+     * @param tinkerFlags
+     */
+    protected MyApplication(int tinkerFlags) {
         super(ShareConstants.TINKER_ENABLE_ALL, "homepage.zts.com.bugmonkeydemo.app.MyApplicationLike",
                 "com.tencent.tinker.loader.TinkerLoader", false);
-    }
-
-    @Override
-    public void registerActivityLifecycleCallbacks(ActivityLifecycleCallbacks callback) {
-        super.registerActivityLifecycleCallbacks(callback);
     }
 }
