@@ -33,11 +33,15 @@ android {
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 >>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
 =======
 >>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
+=======
+        useLibrary 'org.apache.http.legacy'
+>>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
     }
     buildTypes {
         release {
@@ -53,7 +57,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.android.support:design:26.1.0'
@@ -66,6 +70,7 @@ dependencies {
     //tinker的核心库
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     implementation('com.tencent.tinker:tinker-android-lib:latest.release')
     implementation "com.android.support:multidex:1.0.1"
 
@@ -74,18 +79,27 @@ dependencies {
 >>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
     implementation 'com.tencent.tinker:tinker-android-lib:latest.release'
     implementation 'com.android.support:multidex:1.0.1'
+=======
+    implementation('com.tencent.tinker:tinker-android-lib:latest.release')
+    implementation "com.android.support:multidex:1.0.1"
+
+>>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
     //retrofit 和 rxjava  依赖
     implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
-    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    compile 'com.squareup.okhttp3:okhttp:3.7.0'
     implementation 'com.squareup.okio:okio:1.12.0'
     implementation 'io.reactivex:rxandroid:1.1.0'
     implementation 'io.reactivex:rxjava:1.1.0'
+<<<<<<< HEAD
     implementation  'com.orhanobut:logger:2.1.1'
 <<<<<<< HEAD
 >>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
 =======
 >>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
+=======
+
+>>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
 }
 
 

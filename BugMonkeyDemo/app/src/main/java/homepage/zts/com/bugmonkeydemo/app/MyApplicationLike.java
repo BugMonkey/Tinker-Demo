@@ -1,13 +1,12 @@
 package homepage.zts.com.bugmonkeydemo.app;
 
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
-import android.os.Bundle;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -15,11 +14,11 @@ import android.os.Bundle;
 >>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
+=======
+>>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
 import com.tencent.tinker.lib.tinker.TinkerInstaller;
 >>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
 import com.tencent.tinker.loader.app.DefaultApplicationLike;
-
-import homepage.zts.com.bugmonkeydemo.BuildConfig;
 
 /**
  * Created by BugMonkey on 2018/2/2.
@@ -27,67 +26,19 @@ import homepage.zts.com.bugmonkeydemo.BuildConfig;
 
 public class MyApplicationLike extends DefaultApplicationLike {
     public static final String TAG = "MyApplicationLike";
-    private static Context instance;
 
     public MyApplicationLike(Application application, int tinkerFlags, boolean tinkerLoadVerifyFlag, long applicationStartElapsedTime, long applicationStartMillisTime, Intent tinkerResultIntent) {
         super(application, tinkerFlags, tinkerLoadVerifyFlag, applicationStartElapsedTime, applicationStartMillisTime, tinkerResultIntent);
-        instance = application;
-        //log  配置
-        Logger.addLogAdapter(new AndroidLogAdapter() {
-            @Override
-            public boolean isLoggable(int priority, String tag) {
-                return BuildConfig.DEBUG;
-            }
-        });
-        application.registerActivityLifecycleCallbacks(new Application.ActivityLifecycleCallbacks() {
-            @Override
-            public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
-                Logger.e(activity.getLocalClassName() + "---------启动-----------");
-            }
-
-            @Override
-            public void onActivityStarted(Activity activity) {
-
-            }
-
-            @Override
-            public void onActivityResumed(Activity activity) {
-
-            }
-
-            @Override
-            public void onActivityPaused(Activity activity) {
-
-            }
-
-            @Override
-            public void onActivityStopped(Activity activity) {
-
-            }
-
-            @Override
-            public void onActivitySaveInstanceState(Activity activity, Bundle outState) {
-
-            }
-
-            @Override
-            public void onActivityDestroyed(Activity activity) {
-
-            }
-        });
-    }
-
-    public static Context getInstance() {
-
-        return instance;
     }
 
     @Override
     public void onCreate() {
         super.onCreate();
-
-
+        // 这里实现SDK初始化，appId替换成你的在Bugly平台申请的appId
+        // 调试时，将第三个参数改为true
+        //Bugly.init(getApplication(), "900029763", false);
     }
+
 
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     @Override
@@ -99,13 +50,18 @@ public class MyApplicationLike extends DefaultApplicationLike {
         // 安装tinker
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
          TinkerManager.installTinker(this);
+=======
+         TinkerInstaller.install(this);
+>>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
        // Beta.installTinker(this);
     }
 
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     public void registerActivityLifecycleCallback(Application.ActivityLifecycleCallbacks callbacks) {
         getApplication().registerActivityLifecycleCallbacks(callbacks);
+<<<<<<< HEAD
 =======
         TinkerInstaller.install(this);
         // Beta.installTinker(this);
@@ -114,7 +70,11 @@ public class MyApplicationLike extends DefaultApplicationLike {
         TinkerInstaller.install(this);
         // Beta.installTinker(this);
 >>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
+=======
+>>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
     }
+
+
 
 
 }
