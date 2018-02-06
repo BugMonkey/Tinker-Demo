@@ -1,13 +1,13 @@
 package homepage.zts.com.bugmonkeydemo.model.DateSource;
 
 import java.util.Map;
-import java.util.Observable;
 
 import homepage.zts.com.bugmonkeydemo.config.api.DownLoadFileApi;
 import homepage.zts.com.bugmonkeydemo.utils.RetrofitUtils;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import rx.Observable;
 import rx.Subscriber;
 
 /**
@@ -37,7 +37,11 @@ public class DownLoadDataSource {
     }
 
 
-    public Observable  DownLoadFile(Map<String, String> stringStringMap , Subscriber<Response> subscriber){
-        return     downLoadFileApi.downLoadFile(stringStringMap,subscriber);
+    public Observable DownLoadFile(Map<String, String> stringStringMap, Subscriber<Response> subscriber) {
+        return downLoadFileApi.downLoadFile(stringStringMap, subscriber);
     }
+
+
 }
+
+
