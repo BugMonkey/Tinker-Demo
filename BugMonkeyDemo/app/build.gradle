@@ -30,31 +30,8 @@ android {
 
         vectorDrawables.useSupportLibrary = true
         javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-<<<<<<< HEAD
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
-=======
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
-=======
-        useLibrary 'org.apache.http.legacy'
->>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
-=======
-
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
-=======
-
-<<<<<<< HEAD
-        useLibrary 'org.apache.http.legacy'
->>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
-=======
-
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
     }
     buildTypes {
         release {
@@ -81,38 +58,8 @@ dependencies {
     //注释掉原有bugly的仓库
     //compile 'com.tencent.bugly:crashreport:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.3.2
     //tinker的核心库
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    implementation('com.tencent.tinker:tinker-android-lib:latest.release')
-    implementation "com.android.support:multidex:1.0.1"
-
-=======
-=======
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
     implementation 'com.tencent.tinker:tinker-android-lib:latest.release'
     implementation 'com.android.support:multidex:1.0.1'
-=======
-    implementation('com.tencent.tinker:tinker-android-lib:latest.release')
-    implementation "com.android.support:multidex:1.0.1"
-
->>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
-=======
-    implementation 'com.tencent.tinker:tinker-android-lib:latest.release'
-    implementation 'com.android.support:multidex:1.0.1'
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
-=======
-    implementation('com.tencent.tinker:tinker-android-lib:latest.release')
-    implementation "com.android.support:multidex:1.0.1"
-
->>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
-=======
-    implementation 'com.tencent.tinker:tinker-android-lib:latest.release'
-    implementation 'com.android.support:multidex:1.0.1'
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
     //retrofit 和 rxjava  依赖
     implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
@@ -120,27 +67,7 @@ dependencies {
     implementation 'com.squareup.okio:okio:1.12.0'
     implementation 'io.reactivex:rxandroid:1.1.0'
     implementation 'io.reactivex:rxjava:1.1.0'
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     implementation  'com.orhanobut:logger:2.1.1'
-<<<<<<< HEAD
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
-=======
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
-=======
-
->>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
-=======
-    implementation  'com.orhanobut:logger:2.1.1'
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
-=======
-
->>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
-=======
-    implementation  'com.orhanobut:logger:2.1.1'
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
 }
 
 
@@ -148,7 +75,7 @@ dependencies {
 def gitSha() {
     try {
 //        String gitRev = 'git rev-parse --short HEAD'.execute(null, project.rootDir).text.trim()
-        String gitRev = "fushuang666"
+        String gitRev = "123456"
         if (gitRev == null) {
             throw new GradleException("can't get git rev, you should add git to system path or just input test value, such as 'testTinkerId'")
         }
@@ -173,7 +100,7 @@ ext {
 
     //for normal build
     //old apk file to build patch apk
-    tinkerOldApkPath = "${bakPath}/app-debug-0808-17-04-26.apk"
+    tinkerOldApkPath = "${bakPath}/app-debug-0203-14-32-27.apk"
     //proguard mapping file to build patch apk
     tinkerApplyMappingPath = "${bakPath}/app-debug-1018-17-32-47-mapping.txt"
     //resource R.txt to build patch apk, must input if there is resource changed
@@ -490,7 +417,4 @@ if (buildWithTinker()) {
         }
     }
 }
-
-
-
 

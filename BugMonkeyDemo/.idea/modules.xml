@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BugMonkeyDemo.iml" filepath="$PROJECT_DIR$/BugMonkeyDemo.iml" />
+      <module fileurl="file://C:\MyDemo\Tinker-Demo\BugMonkeyDemo\BugMonkeyDemo.iml" filepath="C:\MyDemo\Tinker-Demo\BugMonkeyDemo\BugMonkeyDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\MyDemo\Tinker-Demo\BugMonkeyDemo\app\app.iml" filepath="C:\MyDemo\Tinker-Demo\BugMonkeyDemo\app\app.iml" />
     </modules>
   </component>
 </project>

@@ -8,31 +8,9 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
-=======
->>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
-=======
-import com.orhanobut.logger.AndroidLogAdapter;
-import com.orhanobut.logger.Logger;
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
-=======
->>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
-=======
-import com.orhanobut.logger.AndroidLogAdapter;
-import com.orhanobut.logger.Logger;
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
 import com.tencent.tinker.lib.tinker.TinkerInstaller;
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
 import com.tencent.tinker.loader.app.DefaultApplicationLike;
 
 import homepage.zts.com.bugmonkeydemo.BuildConfig;
@@ -113,47 +91,8 @@ public class MyApplicationLike extends DefaultApplicationLike {
         //MultiDex.install(base);
 
         // 安装tinker
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-         TinkerManager.installTinker(this);
-=======
-         TinkerInstaller.install(this);
->>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
-=======
-         TinkerInstaller.install(this);
->>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
-       // Beta.installTinker(this);
-    }
-
-    @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
-    public void registerActivityLifecycleCallback(Application.ActivityLifecycleCallbacks callbacks) {
-        getApplication().registerActivityLifecycleCallbacks(callbacks);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         TinkerInstaller.install(this);
         // Beta.installTinker(this);
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
-=======
-        TinkerInstaller.install(this);
-        // Beta.installTinker(this);
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
-=======
->>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
-=======
-        TinkerInstaller.install(this);
-        // Beta.installTinker(this);
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
-=======
->>>>>>> parent of 5c7fbe4... logger引入和网络框架搭建
-=======
-        TinkerInstaller.install(this);
-        // Beta.installTinker(this);
->>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
     }
 
 
