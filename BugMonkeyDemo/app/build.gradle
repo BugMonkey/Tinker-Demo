@@ -30,6 +30,11 @@ android {
 
         vectorDrawables.useSupportLibrary = true
         javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
     }
     buildTypes {
         release {
@@ -45,7 +50,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.android.support:design:26.1.0'
@@ -56,9 +61,22 @@ dependencies {
     //注释掉原有bugly的仓库
     //compile 'com.tencent.bugly:crashreport:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.3.2
     //tinker的核心库
+<<<<<<< HEAD
     implementation('com.tencent.tinker:tinker-android-lib:latest.release')
     implementation "com.android.support:multidex:1.0.1"
 
+=======
+    implementation 'com.tencent.tinker:tinker-android-lib:latest.release'
+    implementation 'com.android.support:multidex:1.0.1'
+    //retrofit 和 rxjava  依赖
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    implementation 'com.squareup.okio:okio:1.12.0'
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'io.reactivex:rxjava:1.1.0'
+    implementation  'com.orhanobut:logger:2.1.1'
+>>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
 }
 
 
