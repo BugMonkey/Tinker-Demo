@@ -34,6 +34,9 @@ android {
 =======
 
 
+<<<<<<< HEAD
+>>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
+=======
 >>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
     }
     buildTypes {
@@ -62,10 +65,13 @@ dependencies {
     //compile 'com.tencent.bugly:crashreport:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.3.2
     //tinker的核心库
 <<<<<<< HEAD
+<<<<<<< HEAD
     implementation('com.tencent.tinker:tinker-android-lib:latest.release')
     implementation "com.android.support:multidex:1.0.1"
 
 =======
+=======
+>>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
     implementation 'com.tencent.tinker:tinker-android-lib:latest.release'
     implementation 'com.android.support:multidex:1.0.1'
     //retrofit 和 rxjava  依赖
@@ -76,6 +82,9 @@ dependencies {
     implementation 'io.reactivex:rxandroid:1.1.0'
     implementation 'io.reactivex:rxjava:1.1.0'
     implementation  'com.orhanobut:logger:2.1.1'
+<<<<<<< HEAD
+>>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
+=======
 >>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
 }
 

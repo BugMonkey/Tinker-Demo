@@ -9,7 +9,10 @@ import android.os.Build;
 import android.os.Bundle;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 import com.tencent.tinker.lib.tinker.TinkerInstaller;
@@ -95,6 +98,7 @@ public class MyApplicationLike extends DefaultApplicationLike {
 
         // 安装tinker
 <<<<<<< HEAD
+<<<<<<< HEAD
          TinkerManager.installTinker(this);
        // Beta.installTinker(this);
     }
@@ -102,6 +106,10 @@ public class MyApplicationLike extends DefaultApplicationLike {
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     public void registerActivityLifecycleCallback(Application.ActivityLifecycleCallbacks callbacks) {
         getApplication().registerActivityLifecycleCallbacks(callbacks);
+=======
+        TinkerInstaller.install(this);
+        // Beta.installTinker(this);
+>>>>>>> parent of e95047b... Revert "logger引入和网络框架搭建"
 =======
         TinkerInstaller.install(this);
         // Beta.installTinker(this);
