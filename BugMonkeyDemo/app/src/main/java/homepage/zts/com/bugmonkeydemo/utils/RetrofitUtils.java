@@ -43,6 +43,7 @@ public class RetrofitUtils {
 
     public static Retrofit createRetrofit() {
         return new Retrofit.Builder()
+                .baseUrl("https://raw.githubusercontent.com")
                 .addConverterFactory(GsonConverterFactory.create(new GsonBuilder().create()))
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .client(httpClient)

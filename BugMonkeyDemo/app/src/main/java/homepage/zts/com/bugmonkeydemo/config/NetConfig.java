@@ -5,5 +5,8 @@ package homepage.zts.com.bugmonkeydemo.config;
  */
 
 public class NetConfig {
-    public static final String DOWNLOAD_FILE = "";
+    //下载地址
+    public static final String DOWNLOAD_FILE = "/BugMonkey/DownLoad/master/app-debug-0206-14-24-26.apk";
+    //检查版本更新
+    public static final String CHECK_VISION_UPDATA = "/BugMonkey/DownLoad/master/update.txt";
 }
